@@ -8,8 +8,8 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
-            "args": [],
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
+            "args": [""],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build with Clang"
         }

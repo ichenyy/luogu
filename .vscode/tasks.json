@@ -10,7 +10,7 @@
                 "-stdlib=libc++",
                 "${fileBasenameNoExtension}.cpp",
                 "-o",
-                "build/${fileBasenameNoExtension}",
+                "build/${fileBasenameNoExtension}.out",
                 "--debug"
             ],
             "group": {
