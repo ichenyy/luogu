@@ -32,6 +32,6 @@
 *.app
 
 build/
-CMakeLists.txt
 .vscode
 cmake-build-debug
+.idea

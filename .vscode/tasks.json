@@ -13,10 +13,7 @@
                 "build/${fileBasenameNoExtension}.out",
                 "--debug"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
@@ -25,6 +22,28 @@
                 "showReuseMessage": true,
                 "clear": false
             }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ 生成活动文件",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
         }
     ]
 }
